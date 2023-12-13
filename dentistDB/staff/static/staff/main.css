@@ -6,7 +6,6 @@ body {
     background-color: red;
 }
 
-
 .navbar {
     color: #000;
     background-color: #000;
@@ -40,13 +39,13 @@ body {
 }
 
 .carousel-item img {
-    max-height: 70vh; /* Set the max-height to 50% of the viewport height */
-    width: 100%; /* Keep the width 100% */
+    max-height: 70vh;
+    width: 100%;
     object-fit: cover;
 }
 
 #carouselExample .carousel-caption {
-    font-size: 10em; /* Adjust the font size as needed */
+    font-size: 10em;
 }
 
 h1 {
@@ -58,45 +57,39 @@ h1 {
     font-size: 30px;
 }
 
-/* Add the following styles for navbar dropdown items */
-
-
 .navbar-nav .nav-item.dropdown:hover .nav-link,
 .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
-    background-color: #3b373767 !important; /* Blue color when hovered with !important */
-    transition: background-color 0.5s ease; /* Slow transition effect */
+    background-color: #3b373767 !important;
+    transition: background-color 0.5s ease;
 }
 
 .navbar-nav .nav-item.dropdown .dropdown-menu {
-    background-color: #3b373767 !important; /* Set the default background color for the dropdown menu with !important */
-    border-radius: 0; /* Reset border-radius for dropdown items */
+    background-color: #3b373767 !important;
+    border-radius: 0;
 }
 
 .navbar-nav .nav-item.dropdown .dropdown-item {
-    color: #fff !important; /* Set text color to white with !important */
-    font-size: 19px !important; /* Set font size to 18px with !important */
-    border-radius: 0; /* Reset border-radius for dropdown items */
-    transition: color 0.5s ease; /* Slow transition effect */
+    color: #fff !important;
+    font-size: 19px !important;
+    border-radius: 0;
+    transition: color 0.5s ease;
 }
 
 .navbar-nav .nav-item.dropdown .dropdown-item:hover {
-    background-color: #0f0f0f48 !important; /* Blue color when hovered with !important */
-    color: #fff !important; /* Set text color to white when hovered with !important */
-    transition: background-color 0.5s ease, color 0.5s ease; /* Slow transition effect */
+    background-color: #0f0f0f48 !important;
+    color: #fff !important;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .dropdown-menu {
-    background-color: #3b37373d !important; /* Set the default background color for the dropdown menu with !important */
-    border-radius: 40px; /* Add border-radius for rounded corners */
+    background-color: #3b37373d !important;
+    border-radius: 40px;
 }
 
 .navbar-nav .nav-item.dropdown {
-    border-radius: 50px !important;/* Add border-radius for rounded corners */
+    border-radius: 50px !important;
 }
 
-/*
-cards
-*/
 .card {
     transition: transform 0.2s ease-in-out;
     font-size: 17px;
@@ -105,60 +98,53 @@ cards
 .card:hover {
     transform: scale(1.05);
 }
+
 .our-specialties1 {
     text-align: center;
     font-size: 9em;
     margin-bottom: 250px;
 }
+
 .our-specialties {
     text-align: center;
     font-size: 3em;
     margin-bottom: 20px;
 }
+
 .card-body {
-    height: 200px; /* Adjust the height as needed */
-    overflow: hidden; /* Hide overflow content */
+    height: 200px;
+    overflow: hidden;
     background-color: rgba(173, 173, 173, 0.201);
 }
 
-/* Maintain aspect ratio for images */
 .card img {
     height: 400px;
-    width:415px; 
+    width: 415px;
     object-fit: cover;
 }
 
-/*   success message /error  */
 .success-message {
-    color: #155724; /* Green color for success */
-    background-color: #d4edda; /* Background color for success */
+    color: #155724;
+    background-color: #d4edda;
     border-color: #c3e6cb;
 }
 
 .error-message {
-    color: #721c24; /* Red color for error */
-    background-color: #f8d7da; /* Background color for error */
+    color: #721c24;
+    background-color: #f8d7da;
     border-color: #f5c6cb;
 }
 
-
-
-
-/*    dashboard */
-
-
 .container1 {
     display: flex;
-	margin-top: 600px;
+    margin-top: 600px;
     margin-left: 200px;
     width: 2000px;
 }
 
-
 .card41 {
     flex: 1;
     background-color: #fff;
-	
     margin: 10px;
     padding: 20px;
     border-radius: 8px;
@@ -168,21 +154,20 @@ cards
 
 .card41:hover {
     transform: scale(1.05);
-	cursor: pointer;
-	
+    cursor: pointer;
 }
+
 .card-content1 {
     text-align: center;
 }
 
-.dsh-heading1{
-	font-size: 30px;
+.dsh-heading1 {
+    font-size: 30px;
 }
 
-body{
+body {
     margin: 0;
 }
-/*   view list page */
 
 .circle-link {
     display: flex;
@@ -190,25 +175,22 @@ body{
     justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: #ff0000; /* Green background color */
-    border-radius: 50%; /* Circle shape */
-    color: white; /* Text color */
-    font-size: 20px; /* Icon size */
+    background-color: #ff0000;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
     position: absolute;
     top: 30%;
     left: 90%;
     transform: translate(-50%, -50%);
-    opacity: 0; /* Hidden by default */
+    opacity: 0;
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .card41:hover .circle-link {
-    opacity: 1; /* Show on hover */
-    transform: translate(-50%, -50%) scale(1.5); /* Make it a bit bigger on hover */
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.5);
 }
-
-/*  About page */
-
 
 .display-4 {
     font-size: 2.5rem;

@@ -1,0 +1,45 @@
+{% extends 'staff/index.html' %}
+{% block content %}
+    <div class="container mt-5">
+        <div class="row" style="margin-top: 200px;">
+            <div class="col-md-6">
+                <h1>Our Location</h1>
+                <p class="lead">Visit us at our convenient location.</p>
+            </div>
+            <div class="col-md-6">
+                <!-- Map Section -->
+                <div class="embed-responsive embed-responsive-16by9">
+                    <!-- Replace the iframe src attribute with your actual map embed code -->
+                    <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.678901234567!2d-74.005941!3d40.712776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDM2JzE1LjAiTiA3NMKwMzEnMTguMCJF!5e0!3m2!1sen!2sus!4v1632829564379!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Location Details -->
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <h2>Visit Us</h2>
+                <address>
+                    123 Main Street<br>
+                    Cityville, State 12345<br>
+                    USA
+                </address>
+            </div>
+            <div class="col-md-6">
+                <h2>Contact Information</h2>
+                <p>Email: casadental@example.com</p>
+                <p>Phone: +1 (123) 456-7890</p>
+            </div>
+        </div>
+
+        <!-- Additional Information -->
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <h2>Business Hours</h2>
+                <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                <p>Saturday: 10:00 AM - 4:00 PM</p>
+                <p>Sunday: Closed</p>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

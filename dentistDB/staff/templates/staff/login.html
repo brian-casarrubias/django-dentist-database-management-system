@@ -1,0 +1,45 @@
+
+{% extends 'staff/index.html' %}
+{% load widget_tweaks %}
+
+    {% block content %}
+    <form  method="POST">
+                        
+
+        {% csrf_token %}
+
+        
+
+        <ul class="list-group" style="display: flexbox; margin-left: 1000px; width: 500px; margin-top: 400px;">
+            
+            <h1 class="h3 mb-3 font-weight-normal" style="margin-left: 160px;" >Admin Login</h1>
+
+            <li class="list-group-item mb-1">{% render_field form.username  class+='form-control' placeholder="Username"%}</li>
+        
+            <li class="list-group-item mb-1">{% render_field form.password  class+='form-control' placeholder="Password" %}</li>
+              
+
+
+
+            
+        
+            
+              
+            <a  style="font-size: 13px; margin-left: 160px;" href="{% url 'register-page' %}">Dont have an account?</a>   
+        </ul>
+            <div style="margin-top: 50px; margin-left: 1150px;">
+
+
+                <a     href="{% url 'home-page' %}" class="btn btn-primary">Cancel</a>
+                <button type="submit" class="btn btn-primary" style="margin-left: 20px; display: inline-block;">Sign In</button>
+                
+
+            </div>
+            
+        <!-- Form fields go here -->
+        
+        
+        
+        
+    </form>
+    {% endblock content %}

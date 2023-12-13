@@ -1,0 +1,101 @@
+{% extends 'staff/index.html' %}
+{% load static %}
+{% block content %}
+    <style>
+           body {
+            background-color: rgba(251, 251, 251, 0.039);
+        }
+
+        .rounded-image-container {
+            position: relative;
+            overflow: hidden;
+            display: inline-block; /* Ensure the container size fits the content */
+            margin: 10px; /* Add margin to each container */
+            border-radius: 50%; /* Make the container a perfect circle */
+        }
+
+        .rounded-image-container img {
+            display: block; /* Remove default inline styles on the image */
+            transition: transform 0.5s ease-in-out, outline 0.5s ease-in-out;
+            box-sizing: border-box; /* Include border in size calculation */
+            width: 100%; /* Ensure the image fills the container */
+            height: auto; /* Maintain the image's aspect ratio */
+            border-radius: 50%; /* Make the container a perfect circle */
+        }
+
+        .rounded-image-container:hover img {
+            outline: 1px solid rgba(0, 0, 255, 0.461); /* Change the color as desired */
+            transform: scale(1.05); /* Increase size on hover */
+        }
+        
+    </style>
+
+   
+<div class="container mt-5" style="margin-top: 100px;">
+    <div class="jumbotron" style="margin-top: 200px;">
+        <h1 class="display-4">About Our Dentistry</h1>
+        <p class="lead">Providing Quality Dental Care Since 20XX</p>
+        <hr class="my-4">
+        <p>We are dedicated to ensuring your oral health and providing a comfortable environment for our patients.</p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Our Mission</h2>
+            <p>We strive to deliver the highest quality dental care to our patients and create a positive impact on their overall well-being.</p>
+        </div>
+        <div class="col-md-6">
+            <h2>Why Choose Us?</h2>
+            <ul>
+                <li>Experienced and Caring Dentists</li>
+                <li>State-of-the-Art Facilities</li>
+                <li>Personalized Treatment Plans</li>
+                <li>Comfortable Environment</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Additional Elements for Dentist Information -->
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <h2>Meet Our Team</h2>
+            <p>Our team of dedicated and skilled dentists is committed to providing comprehensive dental care tailored to your needs.</p>
+        </div>
+        <div class="col-md-6">
+            <h2>Advanced Technology</h2>
+            <p>We utilize cutting-edge dental technology to ensure precise diagnoses and effective treatments for our patients.</p>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-3">
+            <div class="rounded-image-container">
+                <img src="{% static 'staff/images/cr4.jpg' %}" alt="Description of the image" class="img-fluid mx-auto d-block rounded-circle shadow" style="width: 100%; height: auto; object-fit: cover;">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="rounded-image-container">
+                <img src="{% static 'staff/images/cr3.jpg' %}" alt="Description of the image" class="img-fluid mx-auto d-block rounded-circle shadow" style="width: 100%; height: auto; object-fit: cover;">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="rounded-image-container">
+                <img src="{% static 'staff/images/cr5.jpg' %}" alt="Description of the image" class="img-fluid mx-auto d-block rounded-circle shadow" style="width: 100%; height: auto; object-fit: cover;">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="rounded-image-container">
+                <img src="{% static 'staff/images/cr6.jpg' %}" alt="Description of the image" class="img-fluid mx-auto d-block rounded-circle shadow" style="width: 100%; height: auto; object-fit: cover;">
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-12">
+            <h2>Patient-Centered Care</h2>
+            <p>We prioritize your comfort and well-being, creating a positive experience for every visit to our dental practice.</p>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

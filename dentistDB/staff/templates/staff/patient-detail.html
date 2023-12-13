@@ -1,0 +1,75 @@
+						
+						
+{% extends 'staff/index.html' %}
+{% load static %}
+
+
+{% block content %}
+    						
+						
+
+    <div class="container mt-5">
+        <div class="text-center" style="margin-top: 200px;">
+            <!-- Circular profile picture with online indicator -->
+            <div style="width: 150px; height: 150px; border-radius: 50%; overflow: hidden; margin: 0 auto;">
+                <img src="{% static 'staff/images/casa1.png' %}" alt="Profile Picture" style="width: 100%; height: 100%; object-fit: cover;">
+                
+            </div>
+        </div>
+
+        <h1 class="mb-4 text-center">Patient Details</h1>
+
+        <div class="card mb-3">
+            <div class="card-body" style="height:125px">
+                <h5 class="card-title">Name</h5>
+                <p class="card-text">{{ object.first_name }} {{ object.last_name }}</p>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <div class="card-body" style="height:125px">
+                <h5 class="card-title">Email</h5>
+                <p class="card-text">{{ object.email }}</p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body"style="height:125px">
+                <h5 class="card-title">Race</h5>
+                <p class="card-text">{{ object.race }}</p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body"style="height:125px">
+                <h5 class="card-title">Gender</h5>
+                <p class="card-text">{{ object.gender }}</p>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <div class="card-body"style="height:125px">
+                <h5 class="card-title">Phone Number</h5>
+                <p class="card-text">{{ object.phone_number }}</p>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <div class="card-body"style="height:125px">
+                <h5 class="card-title">Age</h5>
+                <p class="card-text">{{ object.age }}</p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body"style="height:125px">
+                <h5 class="card-title">Adress</h5>
+                <p class="card-text">{{ object.adress }}</p>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <a href="{% url 'patient-list-page' %}" class="btn btn-secondary" style="margin-right: 10px;">Back</a>
+            <a  href="{% url 'patient-update-page' patient.id %}" class="btn btn-primary" style="margin-right: 10px;">Edit</a>
+            <a href="{% url 'patient-delete-page' patient.id %}" class="btn btn-danger">Delete</a>
+        </div>
+    </div>
+
+{% endblock content%}

@@ -1,0 +1,56 @@
+
+{% extends 'staff/index.html' %}
+{% load widget_tweaks %}
+
+    {% block content %}
+    <form  method="POST">
+                        
+
+        {% csrf_token %}
+
+        
+
+        <ul class="list-group" style="display: flexbox; margin-left: 1000px; width: 500px; margin-top: 400px;">
+            
+            <h1 class="h3 mb-3 font-weight-normal" style="margin-left: 160px;" >Admin Sign up</h1>
+
+            <li class="list-group-item mb-1">{% render_field form.username  class+='form-control' placeholder="Username"%}</li>
+        
+            <li class="list-group-item mb-1">{% render_field form.email  class+='form-control' placeholder="Email" %}</li>
+            <li class="list-group-item mb-1">{% render_field form.password1  class+='form-control' placeholder="Password" %}</li>
+            <li class="list-group-item mb-1">{% render_field form.password2  class+='form-control' placeholder="Password" %}</li>
+            <label class="choice-label mb-1">
+            
+
+            <li class="list-group-item">
+                <label class="choice-label">
+                    <input type="text" name="code" value="" required="true" placeholder="Code">
+                    {% render_field form.choice class+='form-control' placeholder="Your Additional Field" %}
+                </label>
+            </li>
+
+
+
+
+            
+        
+             
+            <a  style="font-size: 13px; margin-left: 160px;" href="{% url 'login-page' %}">Already have an account?</a>      
+            
+        </ul>
+            <div style="margin-top: 50px; margin-left: 1150px;">
+
+
+                <a     href="{% url 'home-page' %}" class="btn btn-primary">Cancel</a>
+                <button type="submit" class="btn btn-primary" style="margin-left: 20px; display: inline-block;">Sign Up</button>
+                
+
+            </div>
+            
+        <!-- Form fields go here -->
+        
+        
+        
+        
+    </form>
+    {% endblock content %}
